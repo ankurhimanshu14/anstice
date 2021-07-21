@@ -1,0 +1,22 @@
+<form class="sign-up-form">
+    <h3>Sign Up Here</h3>
+
+    <div class="email">
+        <label for="email">Email ID: </label>
+        <input class="email" name="email" type="email" id="email" #newemail>
+    </div>
+
+    <div class="username">
+        <label for="username">Username: </label>
+        <input class="username" name="username" type="text" id="username" #newusername>
+    </div>
+
+    <div class="password">
+        <label for="password">Password: </label>
+        <input class="password" name="password" type="password" id="password" #newpassword>
+    </div>
+
+    <div class="submit">
+        <button class="signup-btn" (click)="signUp(newemail, newusername, newpassword)">Create Account</button>
+    </div>
+</form>
