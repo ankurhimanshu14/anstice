@@ -1,0 +1,20 @@
+<form class="login-form">
+    <h3>Sign In</h3>
+    <div class="username">
+        <label for="username">Username: </label>
+        <input class="username" name="username" id="username" #newusername>
+    </div>
+
+    <div class="password">
+        <label for="password">Password: </label>
+        <input class="password" name="password" id="password" #newpassword>
+    </div>
+
+    <div class="submit">
+        <button class="submit-btn" (click)="login(newusername, newpassword)">Sign In</button>
+    </div>
+</form>
+
+<div class="sign-up-link">
+    <a class="sign-up" href="/register">Sign Up</a>
+</div>
