@@ -1,46 +1,5 @@
-<form class="add-product-form">
-    <h3>Add Product</h3>
-    <div class="image">
-        <label for="image">Image: </label>
-        <input class="image" name="image" type="file" id="image" #newimage>
+<div class="inventory-app">
+    <h1>{{ product.name }}</h1>
+    <span>{{ product.sku }}</span>
+    <span>{{ product.price }}</span>
     </div>
-
-    <div class="productId">
-        <label for="productId">Product ID: </label>
-        <input class="productId" name="productId" type="text" id="productId" #newproductId>
-    </div>
-
-    <div class="productName">
-        <label for="productName">Product Name: </label>
-        <input class="productName" name="productName" type="text" id="productName" #newproductName>
-    </div>
-
-    <div class="size">
-        <label for="size">Size: </label>
-        <input class="size" name="size" type="text" id="size" #newsize>
-    </div>
-
-    <div class="weight">
-        <label for="weight">Weight: </label>
-        <input class="weight" name="weight" type="text" id="weight" #newweight>
-    </div>
-
-    <div class="rawMaterial">
-        <label for="rawMaterial">Raw Material: </label>
-        <input class="rawMaterial" name="rawMaterial" type="text" id="rawMaterial" #newrawMaterial>
-    </div>
-
-    <div class="manufacturedBy">
-        <label for="manufacturedBy">Manufacturer: </label>
-        <input class="manufacturedBy" name="manufacturedBy" type="text" id="manufacturedBy" #newmanufacturedBy>
-    </div>
-
-    <div class="retailer">
-        <label for="retailer">Retailer: </label>
-        <input class="retailer" name="retailer" type="text" id="retailer" #newretailer>
-    </div>
-
-    <div class="submit">
-        <button class="submit-btn" (click)="addProduct(newimage, newproductId, newproductName, newsize, newweight, newrawMaterial, newmanufacturedBy, newretailer)">Add</button>
-    </div>
-</form>

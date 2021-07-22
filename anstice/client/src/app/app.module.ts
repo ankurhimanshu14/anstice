@@ -10,6 +10,7 @@ import { ViewAllProductsComponent } from './components/products/view-all-product
 import { AddProductComponent } from './components/products/add-product/add-product.component';
 import { ViewByProductNameComponent } from './components/products/view-by-product-name/view-by-product-name.component';
 import { SignUpComponent } from './components/users/sign-up/sign-up.component';
+import { ProductListComponent } from './components/products/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SignUpComponent } from './components/users/sign-up/sign-up.component';
     ViewAllProductsComponent,
     AddProductComponent,
     ViewByProductNameComponent,
-    SignUpComponent
+    SignUpComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
